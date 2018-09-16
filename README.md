@@ -1,0 +1,15 @@
+﻿# ADM-ULTIMATE-NEW-FREE
+
+Manager Script
+
+ • RECOMENDADO UBUNTU 14.04
+
+ • ESTE INSTALADOR INSTALARÁ EL GENERADOR Y SCRIPT NEW-ULTIMATE ORIGINALES Y SIN MODIFICAR
+
+apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/GENERADOR-NEW-ULTIMATE-ORIGINAL/master/instgerador.sh?dl=0; chmod 777 instgerador.sh* && ./instgerador.sh
+
+
+
+☆ https://t.me/joinchat/AAAAAEXQOSyIpN2JZ0ehUQ ☆
+=================================================
+TEAM [ ILLUMINATI ⃘⃤꙰✰ ]
