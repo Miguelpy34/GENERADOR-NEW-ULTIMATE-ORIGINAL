@@ -1,7 +1,7 @@
 #!/bin/bash
 IVAR="/etc/http-instas"
 SCPT_DIR="/etc/SCRIPT"
-SCPresq="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0Nhcmxvc1BCcmljL05ld0FETS9tYXN0ZXIvZ2VyYWRvcg=="
+SCPresq="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FBQUFBRVhRT1N5SXBOMkpaMGVoVVEvR0VORVJBRE9SLU5FVy1VTFRJTUFURS1PUklHSU5BTC9tYXN0ZXIvZ2VyYWRvcg=="
 SUB_DOM='base64 -d'
 rm $(pwd)/$0
 ofus () {
@@ -45,7 +45,7 @@ MIP2=$(wget -qO- ipv4.icanhazip.com)
 echo "$IP" > /usr/bin/vendor_code
 }
 meu_ip
-echo -e "\033[1;33mVerificando key: "
+echo -e "\033[1;33mInstalando Arquivos... "
 cd $HOME
 REQUEST=$(echo $SCPresq|$SUB_DOM)
 wget -O "$HOME/lista-arq" ${REQUEST}/GERADOR > /dev/null 2>&1
@@ -58,7 +58,7 @@ echo -e "\033[1;31m- \033[1;32mRecebido Com Sucesso!"
 [[ -e $HOME/$arqx ]] && veryfy_fun $arqx
 } || echo -e "\033[1;31m- \033[1;31mFalha (nao recebido!)"
 done
-[[ ! -e /usr/bin/trans ]] && wget -O /usr/bin/trans https://www.dropbox.com/s/p7du0tx92k2daks/trans?dl=0 &> /dev/null
+[[ ! -e /usr/bin/trans ]] && wget -O /usr/bin/trans https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/GENERADOR-NEW-ULTIMATE-ORIGINAL/master/Install/trans &> /dev/null
 [[ -e /bin/http-server.py ]] && mv -f /bin/http-server.py /bin/http-server.sh && chmod +x /bin/http-server.sh
 [[ $(dpkg --get-selections|grep -w "bc"|head -1) ]] || apt-get install bc -y &>/dev/null
 [[ $(dpkg --get-selections|grep -w "screen"|head -1) ]] || apt-get install screen -y &>/dev/null
@@ -73,7 +73,7 @@ echo "$Key" > $IVAR2
 rm $HOME/lista-arq
 echo -e "\033[1;36m--------------------------------------------------------------------\033[0m"
 echo "/usr/bin/gerar.sh" > /usr/bin/gerar && chmod +x /usr/bin/gerar
-echo -e "\033[1;33m Perfeito, Use o Comando \033[1;31mgerar \033[1;33mpara Gerenciar as Suas Keys e
+echo -e "\033[1;33m Perfeito, Use o Comando \033[1;31mgerar.sh o gerar \033[1;33mpara Gerenciar as Suas Keys e
  Atualizar a Base do servidor"
 echo -e "\033[1;36m--------------------------------------------------------------------\033[0m"
 } || {
