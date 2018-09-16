@@ -46,6 +46,7 @@ echo "$IP" > /usr/bin/vendor_code
 }
 meu_ip
 echo -e "\033[1;33mInstalando Arquivos... "
+echo -e "\033[1;36m--------------------------------------------------------------------\033[0m"
 cd $HOME
 REQUEST=$(echo $SCPresq|$SUB_DOM)
 wget -O "$HOME/lista-arq" ${REQUEST}/GERADOR > /dev/null 2>&1
