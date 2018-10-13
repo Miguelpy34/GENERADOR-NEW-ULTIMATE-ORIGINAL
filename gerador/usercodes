@@ -703,7 +703,7 @@ verif_fun () {
            [[ "${limite[$user]}" != +([0-9]) ]] && continue
            if [[ "${conexao[$user]}" -gt "${limite[$user]}" ]]; then
            local lock=$(block_userfun $user -loked)
-           echo "$lock" >> $LIMITERLOG
+           [[ ! -z $lock ]] && echo "$lock" >> $LIMITERLOG
            echo -e "\033[1;31m ULTRAPASSOU LIMITE"
            continue
            fi
